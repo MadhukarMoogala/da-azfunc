@@ -5,6 +5,10 @@
 [![ASP.NET](https://img.shields.io/badge/.NET-4.8-blue.svg)](https://docs.microsoft.com/en-us/dotnet/framework/)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/MIT)
 
+# Workflow
+
+![Workflow.png](https://github.com/MadhukarMoogala/da-azfunc/blob/master/DA-AzureFunctions.png)
+
 # Setup
 
 ## Prerequisites
