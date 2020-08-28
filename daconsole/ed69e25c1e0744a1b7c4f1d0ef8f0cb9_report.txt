@@ -1,0 +1,142 @@
+[08/28/2020 07:03:08] Job information:
+"CommandLine":[
+  "$(engine.path)\\accoreconsole.exe /i $(args[HostDwg].path) /al $(appbundles[forgeExtractLength].path) /s $(settings[script].path)"
+]
+"Settings":{
+  "script": {
+    "value": "ComputeLength\n"
+  },
+  "dasreportfaileduploadoptional": {
+    "value": "true",
+    "isEnvironmentVariable": true
+  }
+}
+"Id":"ed69e25c1e0744a1b7c4f1d0ef8f0cb9"
+"ActivityId":"promx.extractlengths+prod"
+"Engine.Id":"Autodesk.AutoCAD!26"
+"Apps": [
+"App.Id":"promx.forgeExtractLength!12"
+]
+"BoundArguments":{
+  "HostDwg": {
+    "localName": "square.dwg",
+    "url": "https://fpd-uploads.s3.us-west-2.amazonaws.com/Masked:UuvWFvmHkry4cSUQF+qV4kQx3t4="
+  },
+  "Result": {
+    "localName": "result.json",
+    "url": "https://azfunc-da-oauth.azurewebsites.netapi/Masked:1mUq6P/pH+QbE8QTT8Zs5hR2hzk=",
+    "verb": "post"
+  },
+  "onProgress": {
+    "ondemand": true,
+    "url": "https://wlnr5sjl3a.execute-api.us-east-1.amazonaws.com/Masked:UK/Z3b5X3xUWxXiH6C9r9i9UlRU=",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-das-authorize": "awssigv4(us-east-1)",
+      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"RE1XnQAYYs9OWyOSO5t1R0Nu4syEaONA\"},\"scope\":\"code:all\",\"expires_in\":3596,\"client_id\":\"RE1XnQAYYs9OWyOSO5t1R0Nu4syEaONA\"}"
+    },
+    "verb": "put"
+  }
+}
+"Quotas":{
+  "limitProcessingTimeSec": 100,
+  "limitTotalUncompressedAppsSizeInMB": 500
+}
+[08/28/2020 07:03:08] Starting work item ed69e25c1e0744a1b7c4f1d0ef8f0cb9
+[08/28/2020 07:03:08] Start download phase.
+[08/28/2020 07:03:08] Start downloading input: verb - 'GET', url - 'https://fpd-uploads.s3.us-west-2.amazonaws.com/square.dwg'
+[08/28/2020 07:03:09] '16770' bytes have been written to T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\square.dwg.
+[08/28/2020 07:03:09] End downloading file 'https://fpd-uploads.s3.us-west-2.amazonaws.com/square.dwg'.
+[08/28/2020 07:03:09] End download phase successfully.
+[08/28/2020 07:03:10] Start preparing script and command line parameters.
+[08/28/2020 07:03:10] Command line: [ /i T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\square.dwg /al T:\Aces\Applications\8d8f1384babe18bca8a27e66825f02cc.promx.forgeExtractLength[12].package /s T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\setting_script.scr]
+[08/28/2020 07:03:10] End preparing script and command line parameters.
+[08/28/2020 07:03:11] Start script phase.
+[08/28/2020 07:03:11] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_ed69e25c1e0744a1b7c4f1d0ef8f0cb9 "T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\userdata" /exe "T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe"  /i T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\square.dwg /al T:\Aces\Applications\8d8f1384babe18bca8a27e66825f02cc.promx.forgeExtractLength[12].package /s T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\setting_script.scr.
+[08/28/2020 07:03:11] Start AutoCAD Core Engine standard output dump.
+[08/28/2020 07:03:11] Redirect stdout (file: T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\tmp\accc29602).
+[08/28/2020 07:03:11] AcCoreConsole: StdOutConsoleMode: processed-output: disabled,auto
+[08/28/2020 07:03:11] AutoCAD Core Engine Console - Copyright 2020 Autodesk, Inc.  All rights reserved. (R.47.Z.163)
+[08/28/2020 07:03:11] Execution Path:
+[08/28/2020 07:03:11] T:\Aces\AcesRoot\24.0\coreEngine\Exe\accoreconsole.exe
+[08/28/2020 07:03:11] Current Directory: T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9
+[08/28/2020 07:03:11] Isolating to regkey=HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_ed69e25c1e0744a1b7c4f1d0ef8f0cb9, userDataFolder=T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\userdata.
+[08/28/2020 07:03:11] Version Number: R.47.Z.163 (UNICODE)
+[08/28/2020 07:03:12] Regenerating model.
+[08/28/2020 07:03:12] AutoCAD menu utilities loaded.
+[08/28/2020 07:03:12] Command:
+[08/28/2020 07:03:12] Command:
+[08/28/2020 07:03:12] Command:
+[08/28/2020 07:03:12] Command: ComputeLength
+[08/28/2020 07:03:15] End AutoCAD Core Engine standard output dump.
+[08/28/2020 07:03:15] End script phase.
+[08/28/2020 07:03:15] Start upload phase.
+[08/28/2020 07:03:15] Uploading 'T:\Aces\Jobs\ed69e25c1e0744a1b7c4f1d0ef8f0cb9\result.json': verb - 'POST', url - 'https://azfunc-da-oauth.azurewebsites.netapi/PutResultJson/ed69e25c1e0744a1b7c4f1d0ef8f0cb9'
+[08/28/2020 07:03:15] Warning: Retrying on HttpRequestException. Request is POST https://azfunc-da-oauth.azurewebsites.netapi/PutResultJson/ed69e25c1e0744a1b7c4f1d0ef8f0cb9. Exception: System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.Handlers.ProgressMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.RetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, IEnumerable`1 shouldRetryExceptionPredicates, IEnumerable`1 shouldRetryResultPredicates, Func`1 policyStateFactory, Boolean continueOnCapturedContext)
+[08/28/2020 07:03:20] Warning: Retrying on HttpRequestException. Request is POST https://azfunc-da-oauth.azurewebsites.netapi/PutResultJson/ed69e25c1e0744a1b7c4f1d0ef8f0cb9. Exception: System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.Handlers.ProgressMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.RetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, IEnumerable`1 shouldRetryExceptionPredicates, IEnumerable`1 shouldRetryResultPredicates, Func`1 policyStateFactory, Boolean continueOnCapturedContext)
+[08/28/2020 07:03:35] Warning: Retrying on HttpRequestException. Request is POST https://azfunc-da-oauth.azurewebsites.netapi/PutResultJson/ed69e25c1e0744a1b7c4f1d0ef8f0cb9. Exception: System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.Handlers.ProgressMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.RetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, IEnumerable`1 shouldRetryExceptionPredicates, IEnumerable`1 shouldRetryResultPredicates, Func`1 policyStateFactory, Boolean continueOnCapturedContext)
+[08/28/2020 07:04:05] Warning: Retrying on HttpRequestException. Request is POST https://azfunc-da-oauth.azurewebsites.netapi/PutResultJson/ed69e25c1e0744a1b7c4f1d0ef8f0cb9. Exception: System.Net.Http.HttpRequestException: No such host is known.
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.Handlers.ProgressMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Polly.Retry.RetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, IEnumerable`1 shouldRetryExceptionPredicates, IEnumerable`1 shouldRetryResultPredicates, Func`1 policyStateFactory, Boolean continueOnCapturedContext)
+[08/28/2020 07:04:05] Warning: Retrying on Win32Exception. Request is POST https://azfunc-da-oauth.azurewebsites.netapi/PutResultJson/ed69e25c1e0744a1b7c4f1d0ef8f0cb9. ErrorCode = 11001, Reason = No such host is known.
+[08/28/2020 07:04:05] Warning: Request failed with an exception: System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken).
+[08/28/2020 07:04:05] Error: Upload failed, reason: No such host is known..
+[08/28/2020 07:04:05] Error: An unexpected error happened during phase Publishing of job.
+[08/28/2020 07:04:05] Job finished with result FailedUpload
+[08/28/2020 07:04:05] Job Status:
+{
+  "status": "failedUpload",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/promx/ed69e25c1e0744a1b7c4f1d0ef8f0cb9/report.txt?AWSAccessKeyId=ASIATGVJZKM3E53LFDAX&Expires=1598601889&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCICmo%2FtI8X%2FbWh7zNuaX9%2Ff8zBQJ6BfVgoMYCQ095Y70xAiEAvbbq6aIR5K6pjPEf0lsGeAdtjbKyQS4nJfChIrer0lAq3gEI%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARACGgwyMjA0NzMxNTIzMTAiDCdhuzJ5UjhIfbnWJSqyAe9Ielz6%2FSZfqgW25zjej2rrs54qBa0PwXdVb5Z8RTpbCleTIq4f3CP0pAMnQoELDf0jNtPfe2RKB1bTDde8Xw4stfzVsXGNLMMuLW1wYjuxF87mhyJ5tLAScf0xw9UHe8eSyAaBXkZPEbukSvrytXYEUSgQGj1oOB6QSpx7MwiOqqEDG%2Fvo%2BsIr2oYFHWPEBh77a73AOZeLw4IS%2FrvYU5utiORMT05vfk5guvv%2Fr9j3lyswzLei%2BgU64AF%2BLL7u93Ug837AE3jHr8UmyE06ZQN%2Fm1d75I%2BT0v%2BeBf%2FqMRW9IBK%2F9qNrFYHtzvX1SIvcnVdP8CXENLKWTxRJ8DkcI8abbEveyO4o6Gb8LuOPvafc2XIAV3f0U0XZmDWAac3UqnS%2FteHmb9AWMClObag9mff5vVLpCi594%2FrwrRe5GwOofn4ManD%2F%2FUrho%2FS8GYUuoC42%2FzHKvH2IHG3Uwd4xNKyHqxbZrcwkC2M2AFRn0hVhDgbVMV4Gj99gO8G%2F9MVwIaFrhWfnDpi3joFIuKEibUBnylZ3TCghFr15Lg%3D%3D&Signature=LC0v9o5l%2FvbENB7y%2FnSycGYHxGw%3D",
+  "stats": {
+    "timeQueued": "2020-08-28T07:03:08.7421718Z",
+    "timeDownloadStarted": "2020-08-28T07:03:08.9226439Z",
+    "timeInstructionsStarted": "2020-08-28T07:03:10.9840282Z",
+    "timeInstructionsEnded": "2020-08-28T07:03:15.4817067Z",
+    "timeUploadEnded": "2020-08-28T07:04:05.9361698Z",
+    "bytesDownloaded": 16770
+  },
+  "id": "ed69e25c1e0744a1b7c4f1d0ef8f0cb9"
+}

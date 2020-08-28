@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "daconsole": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "FORGE_CLIENT_SECRET": "",
+        "FORGE_CLIENT_ID": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationPackage SchemaVersion="1.0" Version="1.0" ProductCode="{F11EA57A-1E7E-4B6D-8E81-986B071E3E07}" Name="extractLength" Description="Sample Plugin" Author="Forge Advocates team">
+	<CompanyDetails Name="Autodesk, Inc" Url="http://learnforge.autodesk.io" Email="forge.help@autodesk.com"/>
+	<Components>
+		<RuntimeRequirements OS="Win64" Platform="AutoCAD"/>
+		<ComponentEntry AppName="extractLength" ModuleName="./Contents/extractLength.dll" AppDescription="Extract length information" LoadOnCommandInvocation="True" LoadOnAutoCADStartup="True">
+			<Commands GroupName="MyCommands">
+				<Command Global="ComputeLength" Local="ComputeLength"/>
+      </Commands>
+      <AssemblyMappings>
+        <AssemblyMapping
+          Name="extractLength.Newtonsoft.Json"
+          Path="./Contents/Newtonsoft.Json.dll" />
+      </AssemblyMappings>
+		</ComponentEntry>
+    <ComponentEntry
+        AppName="extractLength.Newtonsoft.Json"
+        AppType="Dependency"
+        ModuleName="./Contents/Newtonsoft.Json.dll"
+        AppDescription="JSON processing library"
+        LoadOnAutoCADStartup="False" />
+	</Components>
+</ApplicationPackage>
